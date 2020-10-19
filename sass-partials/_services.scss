@@ -1,0 +1,71 @@
+.services{
+  padding: 100px 0;
+  .title{
+    font-size: 2rem;
+       font-family: 'Acme', sans-serif;
+       text-align: center;
+       margin-bottom: 20px;
+  }
+  .wrapper{
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 1000px;
+     .service-card{
+       width: 250px;
+       height: 300px;
+       box-sizing: border-box;
+       padding: 20px;
+       margin: 20px 0;
+       .card-img{
+         width: 50%;
+          img{
+            width: 100%;
+          }
+        
+       }
+       .card-content{
+         margin-top: 20px;
+         .card-title{
+           font-size: 1.2rem;
+            font-family: 'Acme', sans-serif;
+         }
+         .description{
+           margin: 10px 0;
+           color: gray;
+           font-size: 0.9rem;
+           line-height: 1.5;
+         }
+         .link{
+           font-size: 0.9rem;
+           i{
+             font-size: 0.7rem;
+             color: blue;
+             margin-left: 10px
+           }
+         }
+       }
+     }
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .services{
+    .wrapper{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (min-width: 992px){
+  .services{
+    .wrapper{
+     
+      justify-content:space-between;
+      margin-top: 40px;
+    }
+  }
+}

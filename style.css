@@ -464,6 +464,99 @@
   }
 }
 
+.services {
+  padding: 100px 0;
+}
+
+.services .title {
+  font-size: 2rem;
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+}
+
+.services .wrapper .service-card {
+  width: 250px;
+  height: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.services .wrapper .service-card .card-img {
+  width: 50%;
+}
+
+.services .wrapper .service-card .card-img img {
+  width: 100%;
+}
+
+.services .wrapper .service-card .card-content {
+  margin-top: 20px;
+}
+
+.services .wrapper .service-card .card-content .card-title {
+  font-size: 1.2rem;
+  font-family: 'Acme', sans-serif;
+}
+
+.services .wrapper .service-card .card-content .description {
+  margin: 10px 0;
+  color: gray;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.services .wrapper .service-card .card-content .link {
+  font-size: 0.9rem;
+}
+
+.services .wrapper .service-card .card-content .link i {
+  font-size: 0.7rem;
+  color: blue;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .services .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .services .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px;
+  }
+}
+
 .articles {
   padding: 50px 0;
 }
@@ -566,8 +659,9 @@
 }
 
 .about-founder {
-  padding: 100px 0;
+  padding: 150px 0 100px;
   background: #491ee4;
+  position: relative;
 }
 
 .about-founder .wrapper {
@@ -617,9 +711,33 @@
   text-align: center;
 }
 
+.custom-shape-divider-top-1603102849 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1603102849 svg {
+  position: relative;
+  display: block;
+  width: calc(151% + 1.3px);
+  height: 118px;
+}
+
+.custom-shape-divider-top-1603102849 .shape-fill {
+  fill: #FFFFFF;
+}
+
 @media only screen and (min-width: 992px) {
   .about-founder .wrapper .founder-quote {
     font-size: 1.5rem;
+  }
+  .about-founder .wrapper .founder-img {
+    width: 180px;
+    height: 180px;
   }
 }
 

@@ -1,6 +1,7 @@
 .about-founder{
-  padding: 100px 0;
+  padding: 150px 0 100px;
   background: map-get($map: $colors, $key: about-founder-bg-color);
+  position: relative;
   .wrapper{
     width: 90%;
     max-width: 600px;
@@ -37,6 +38,25 @@
     }
   }
 }
+.custom-shape-divider-top-1603102849 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1603102849 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 118px;
+}
+
+.custom-shape-divider-top-1603102849 .shape-fill {
+    fill: #FFFFFF;
+}
 
 @media only screen and (min-width: 992px){
   .about-founder{
@@ -44,6 +64,10 @@
        .founder-quote{
          font-size: 1.5rem;
        
+       }
+       .founder-img{
+         width: 180px;
+         height: 180px;
        }
     }
   }
