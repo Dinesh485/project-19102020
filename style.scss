@@ -1,0 +1,20 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif; 
+}
+$colors: (
+  color1: rgb(206, 229, 255),
+  btn-color: rgb(1, 212, 212),
+  what-we-do-bg-color: rgba(255, 242, 219, 0.938),
+  about-founder-bg-color: rgb(73, 30, 228),
+);
+@import './sass-partials/nav-bar';
+@import './sass-partials/banner';
+@import './sass-partials/partners';
+@import './sass-partials/what-we-do';
+@import './sass-partials/articles';
+@import './sass-partials/about-founder';
+@import './sass-partials/free-trail';

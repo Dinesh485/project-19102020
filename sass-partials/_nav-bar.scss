@@ -1,0 +1,126 @@
+.nav-bar{
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  .wrapper{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    .logo{
+      width: 120px;
+
+    }
+    .menu{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: map-get($map: $colors, $key: color1);
+          pointer-events: none;
+        opacity: 0;
+       transition: opacity 300ms linear;
+      li{
+        margin: 20px;
+        a{
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: black;
+         
+      
+        }
+      }
+    }
+    .menu-fade{
+      opacity: 1;
+      pointer-events: all;
+    }
+    div:last-child{
+      display: flex;
+      align-items: center;;
+
+      .login-btn{
+        padding: 5px 15px;
+        background: map-get($map: $colors, $key: btn-color);
+        border-radius: 5px;
+        color: black;
+        font-size: 0.9rem;
+      }
+      .menu-btn{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+        z-index: 10;
+        span{
+          width: 90%;
+          border: 1px solid;
+          border-radius: 30%;
+          transform-origin: left center;
+          transition: transform 300ms linear, opacity 300ms linear;
+        }
+        .top-rotate{
+          transform: rotate(45deg);
+        }
+        .middle-fade{
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        .bottom-rotate{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+  .nav-bar{
+    .wrapper{
+      .logo{
+        width: 200px;
+      }
+      .menu{
+        position: static;
+        background: none;
+        width: fit-content;
+        height: fit-content;
+         flex-direction: row;
+         opacity: 1;
+        li{
+          margin: 0 15px;
+           
+          a{
+            color: black;
+            font-size: 1rem;
+            font-weight: normal;
+            pointer-events: all;
+          }
+        }
+      }
+      div:last-child{
+        .login-btn{
+          padding: 10px 20px;
+        }
+       .menu-btn{
+         display: none;
+       }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.free-trail{
+  padding: 50px 0;
+  background: rgb(226, 226, 226);
+  .wrapper{
+     max-width: 1200px;
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     .content{
+       .title{
+         font-size: 2rem;
+         font-family: 'Acme', sans-serif;
+       }
+       .description{
+         color: rgb(47, 47, 163);
+         margin-top: 20px;
+       }
+     }
+     .btns{
+       display: flex;
+       margin-top: 30px;
+       justify-content: center;
+       a{
+         color: rgb(0, 0, 172);
+         background: map-get($map: $colors, $key: btn-color);
+         padding: 15px 20px;
+         border-radius:7px;
+         display: block;
+         width: fit-content;
+         font-size: 0.9rem;
+         font-weight: 600;
+         margin: 0 5px;
+         height: fit-content;
+       }
+       a:last-child{
+         background: whitesmoke;
+         border: none;
+        
+       }
+     }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .free-trail{
+    padding: 100px 0;
+    .wrapper{
+      flex-direction: row;
+      justify-content: space-between;
+      .content{
+        width: 50%;
+        .title{
+          font-size: 2.5rem;
+        }
+      }
+      .btns{
+        a{
+          margin: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px){
+  .free-trail{
+    .wrapper{
+    
+      .content{
+      
+        .title{
+          font-size: 3rem;
+        }
+      }
+      
+    }
+  }
+}

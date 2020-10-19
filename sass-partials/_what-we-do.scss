@@ -1,0 +1,126 @@
+.what-we-do{
+  padding: 100px 0;
+  background: map-get($map: $colors, $key: what-we-do-bg-color);
+  position: relative;
+  .wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+     .what-we-do-content{
+       .title{
+         font-family: 'Acme', sans-serif;
+         font-size: 2.6rem;
+ 
+         text-transform: capitalize;
+         margin-bottom: 30px;
+
+       }
+       .caption{
+         font-size: 0.9rem;
+         line-height: 1.8;
+       }
+       .learn-more{
+         color: blue;
+          margin-top: 20px;
+          display: block;
+         .fa{
+           font-size: .8rem;
+           margin-left: 10px;
+         }
+       }
+     }
+    .what-we-do-img{
+      margin-bottom: 50px;
+      border-radius: 10px;
+      overflow: hidden;
+       img{
+         width: 100%;
+
+       }
+    }
+  }
+}
+
+.custom-shape-divider-bottom-1603102199 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1603102199 svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 64px;
+}
+
+.custom-shape-divider-bottom-1603102199 .shape-fill {
+    fill: #FFFFFF;
+}
+.custom-shape-divider-top-1603102337 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1603102337 svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 64px;
+}
+
+.custom-shape-divider-top-1603102337 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px){
+  .what-we-do{
+    .wrapper{
+      .what-we-do-content{
+           width: 60%;
+      }
+     
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .what-we-do{
+    .wrapper{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .what-we-do-img{
+        margin: 0;
+        width: 50%;
+      }
+      .what-we-do-content{
+        width: 40%;
+        
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px){
+  .what-we-do{
+    padding: 150px 0 ;
+    .wrapper{
+    
+      .what-we-do-content{
+        .title{
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
