@@ -890,6 +890,7 @@
 .about-founder {
   padding: 150px 0 100px;
   background: #491ee4;
+  position: relative;
 }
 
 .about-founder .wrapper {
