@@ -462,6 +462,7 @@
 .services-two .wrapper .bg-cover-card {
   margin-bottom: 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
@@ -889,13 +890,16 @@
 .about-founder {
   padding: 150px 0 100px;
   background: #491ee4;
-  position: relative;
 }
 
 .about-founder .wrapper {
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
+  position: relative;
+}
+
+.about-founder .wrapper .slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,6 +910,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  width: 100%;
+  left: 0;
+}
+
+.about-founder .wrapper .slide:first-child {
+  position: relative;
 }
 
 .about-founder .wrapper .founder-img {
