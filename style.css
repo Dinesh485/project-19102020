@@ -6,6 +6,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+  --animate-delay: 0.2s;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -259,11 +263,47 @@
           align-items: center;
   color: black;
   font-weight: bold;
+  -webkit-box-shadow: 0 0 0px #40e0bc;
+          box-shadow: 0 0 0px #40e0bc;
+  -webkit-animation: bg-wave 1500ms ease;
+          animation: bg-wave 1500ms ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .banner .wrapper .banner-content .call-button i {
   font-size: 1.5rem;
   margin-right: 10px;
+}
+
+@-webkit-keyframes bg-wave {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px #40e0bc;
+            box-shadow: 0 0 0 0px #40e0bc;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 0 10px transparent;
+            box-shadow: 0 0 0 10px transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0  10px transparent;
+            box-shadow: 0 0 0  10px transparent;
+  }
+}
+
+@keyframes bg-wave {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px #40e0bc;
+            box-shadow: 0 0 0 0px #40e0bc;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 0 10px transparent;
+            box-shadow: 0 0 0 10px transparent;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0  10px transparent;
+            box-shadow: 0 0 0  10px transparent;
+  }
 }
 
 .banner .wrapper .banner-img {
@@ -1105,8 +1145,8 @@
     padding: 100px 0;
   }
   .get-quote .wrapper {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

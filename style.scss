@@ -12,7 +12,9 @@ $colors: (
   what-we-do-bg-color: rgba(255, 242, 219, 0.938),
   about-founder-bg-color: rgb(73, 30, 228),
 );
-
+:root{
+  --animate-delay: 0.2s;
+}
 
 
 @import './sass-partials/nav-bar';

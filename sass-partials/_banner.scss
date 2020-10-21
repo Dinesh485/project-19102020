@@ -37,9 +37,26 @@
          align-items: center;
          color: black;
          font-weight: bold;
+        box-shadow: 0 0 0px map-get($map: $colors, $key: btn-color);
+         animation: bg-wave 1500ms ease;
+         animation-iteration-count: infinite;
+         
+
          i{
            font-size: 1.5rem;
            margin-right: 10px;
+         }
+       }
+       @keyframes bg-wave{
+         0%{
+             box-shadow: 0 0 0  0px map-get($map: $colors, $key: btn-color);
+
+         }
+         50%{
+             box-shadow: 0 0 0 10px transparent;
+         }
+         100%{
+             box-shadow: 0 0 0  10px transparent;
          }
        }
      }
