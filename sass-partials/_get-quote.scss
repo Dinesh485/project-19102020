@@ -1,0 +1,65 @@
+.get-quote{
+  padding: 50px 0;
+  .wrapper{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 30px;
+    .card{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 400px;
+       .title{
+     font-size: 2rem;
+     font-weight: bold;
+    }
+    .icon{
+      font-size: 1.5rem;
+      color: rgb(67, 148, 255);
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid gray;
+      width: fit-content;
+    }
+      .card-title{
+        font-size: 1.1rem;
+        font-weight: bold;
+         margin: 15px 0;
+      }
+      .description{
+        font-size: 0.9rem;
+        color: gray;
+      }
+    }
+    
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .get-quote{
+    .wrapper{
+      grid-template-columns: 1fr 1fr;
+      .card{
+        align-items: flex-start;
+        text-align: left;
+        margin: 20px;
+        .title{
+          font-size: 2.5rem;
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .get-quote{
+    padding: 100px 0;
+    .wrapper{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

@@ -2,6 +2,11 @@
   padding: 100px 0;
   background: map-get($map: $colors, $key: color1);
   position: relative;
+  background: linear-gradient(to top,  map-get($map: $colors, $key: overlay-color) , rgba(255, 255, 255, 0.753)) ,url(../images/pexels-elly-fairytale-3807571.jpg) ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   .wrapper{
     width: 90%;
     max-width: 1200px;
@@ -10,15 +15,32 @@
     flex-direction: column;
      .banner-content{
        .title{
-         font-family: 'Acme', sans-serif;
+      
          font-size: 2.6rem;
-        
+        font-weight: bold;
          text-transform: capitalize;
          margin-bottom: 30px;
 
        }
        .caption{
-         font-size: 0.9rem;
+         font-size: 1.3rem;
+       }
+       .call-button{
+         padding: 10px 20px;
+         border-radius: 15px;
+         background: map-get($map: $colors, $key: btn-color);
+         margin-top: 20px;
+         font-size: 1rem;
+         display: block;
+         width: fit-content;
+         display: flex;
+         align-items: center;
+         color: black;
+         font-weight: bold;
+         i{
+           font-size: 1.5rem;
+           margin-right: 10px;
+         }
        }
      }
     .banner-img{
@@ -96,6 +118,10 @@
       .banner-content{
         .title{
           font-size: 4rem;
+        }
+        .call-button{
+          padding: 15px 35px;
+          border-radius: 30px;
         }
       }
     }
