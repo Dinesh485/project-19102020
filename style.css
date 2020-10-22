@@ -1216,9 +1216,9 @@
 }
 
 .footer .wrapper .btn {
-  padding: 10px 15px;
+  padding: 20px 30px;
   background: #40e0bc;
-  border-radius: 15px;
+  border-radius: 30px;
   color: black;
   font-size: 0.9rem;
   display: -webkit-box;
@@ -1236,9 +1236,6 @@
 }
 
 @media (min-width: 768px) {
-  .footer {
-    padding: 100px 0;
-  }
   .footer .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
