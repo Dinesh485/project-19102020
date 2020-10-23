@@ -465,6 +465,24 @@
   cursor: pointer;
 }
 
+@media only screen and (min-width: 576px) {
+  .services-two .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services-two .wrapper .bg-cover-card {
+    width: 220px;
+    margin: 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .services-two .title {
     font-size: 2.5rem;
@@ -485,6 +503,19 @@
   }
   .services-two .wrapper .bg-cover-card {
     margin: 20px;
+    max-width: 240px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .services-two .wrapper {
+    max-width: 800px;
+  }
+  .services-two .wrapper .bg-cover-card {
+    height: 280px;
+  }
+  .services-two .wrapper .bg-cover-card .post-title {
+    font-size: 1.1rem;
   }
 }
 

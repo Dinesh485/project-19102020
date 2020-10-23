@@ -24,6 +24,21 @@
   }
 }
 
+@media only screen and (min-width: 576px){
+  .services-two{
+    .wrapper{
+      flex-direction: row;
+      flex-wrap: wrap;
+       justify-content: center;
+      .bg-cover-card{
+        width: 220px;
+        margin: 20px;
+        
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 768px){
   .services-two{
     .title{
@@ -36,7 +51,22 @@
        justify-content: center;
        .bg-cover-card{
          margin: 20px;
+         max-width: 240px;;
        }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .services-two{
+    .wrapper{
+      max-width: 800px;
+      .bg-cover-card{
+        height: 280px;
+       .post-title{
+         font-size: 1.1rem;
+       }
+      }
     }
   }
 }
