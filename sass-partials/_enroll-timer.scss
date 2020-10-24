@@ -1,0 +1,41 @@
+
+.enroll-timer{
+  padding: 30px 0;
+  background: rgb(69, 144, 241);
+  .wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    div{
+      margin: 10px;
+      color: white;
+
+      font-size: 1.1rem;
+    }
+    .timer{
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      div{
+        span{
+          background: rgb(231, 231, 231);
+          padding: 5px 10px;
+          border-radius: 5px;
+          margin: 0 5px;
+          font-weight: normal;
+          color: black;
+        }
+        span:first-child{
+          background: none;
+          color: white;
+        }
+      }
+    }
+  
+  }
+}

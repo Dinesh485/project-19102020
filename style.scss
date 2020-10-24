@@ -16,7 +16,7 @@ $colors: (
   --animate-delay: 0.2s;
 }
 
-
+@import './sass-partials/enroll-timer';
 @import './sass-partials/nav-bar';
 @import './sass-partials/banner';
 @import './sass-partials/partners';

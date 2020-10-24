@@ -10,6 +10,61 @@
   --animate-delay: 0.2s;
 }
 
+.enroll-timer {
+  padding: 30px 0;
+  background: #4590f1;
+}
+
+.enroll-timer .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.enroll-timer .wrapper div {
+  margin: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.enroll-timer .wrapper .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.enroll-timer .wrapper .timer div span {
+  background: #e7e7e7;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-weight: normal;
+  color: black;
+}
+
+.enroll-timer .wrapper .timer div span:first-child {
+  background: none;
+  color: white;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
