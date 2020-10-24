@@ -1340,4 +1340,125 @@
     text-align: left;
   }
 }
+
+.get-quote-2 {
+  padding: 50px 0;
+}
+
+.get-quote-2 .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.get-quote-2 .wrapper {
+  padding: 40px 0;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: #ebebeb;
+}
+
+.get-quote-2 .wrapper .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.get-quote-2 .wrapper .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 230px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+  background: white;
+}
+
+.get-quote-2 .wrapper .cards .card .icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #ff9642;
+}
+
+.get-quote-2 .wrapper .features {
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.get-quote-2 .wrapper .features div {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.get-quote-2 .wrapper .features div span {
+  display: inline;
+}
+
+.get-quote-2 .wrapper .features i {
+  color: #ff9642;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  display: block;
+}
+
+@media only screen and (min-width: 992px) {
+  .get-quote-2 .wrapper .features {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1000px;
+  }
+  .get-quote-2 .wrapper .features div {
+    padding: 5px 15px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,85 @@
+.get-quote-2{
+  padding: 50px 0;
+ 
+  .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom : 30px;
+  }
+  .wrapper{
+    padding: 40px 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+     background: rgb(235, 235, 235);
+    .cards{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+         width: 100%;
+        max-width: 300px;
+        height: 230px;
+        text-align: center;
+        font-weight: bold;
+         margin: 20px;
+     
+        background: white;
+        .icon{
+          font-size: 4rem;
+          margin-bottom: 10px;
+          color:#ff9642;
+        }
+      }
+     
+      
+    }
+    .features{
+      font-weight: 300;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 20px;
+      div{
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        span{
+          display: inline;
+        }
+      }
+      i{
+        color:#ff9642;
+        font-size: 1.1rem;
+        margin-right: 10px;
+        display: block 
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .get-quote-2{
+    .wrapper{
+      .features{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        max-width: 1000px;
+        div{
+          padding: 5px 15px;
+        }
+      }
+    }
+  }
+}
